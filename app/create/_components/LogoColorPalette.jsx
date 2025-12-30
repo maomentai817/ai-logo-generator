@@ -6,8 +6,8 @@ import HeadingDesc from './HeadingDesc'
 
 
 
-function LogoColorPalette({ onHandleInputChange }) {
-  const [selectedOption, setSelectedOption] = useState()
+function LogoColorPalette({ onHandleInputChange, formData }) {
+  const [selectedOption, setSelectedOption] = useState(formData?.palette)
 
   return (
     <div className='my-10'>

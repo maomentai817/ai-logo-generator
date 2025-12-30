@@ -11,7 +11,7 @@ export default {
   LogoColorPaletteTitle: 'Choose Your Color Palette',
   LogoColorPaletteDesc: 'Pick the colors that reflect your brands personality and create a lasting impression.',
   LogoDesignTitle: 'Choose Your Logo Style',
-  LogoDesignDesc: 'Select the type of logo design that best represents your brand.',
+  LogoDesignDesc: 'Select the type of logo design that best represents your brands unique identity.',
   LogoIdeaTitle: 'Select Your Design Idea',
-  LogoIdeaDesc: 'Choose a design style that aligns with you version, or',
+  LogoIdeaDesc: 'Choose a design style that aligns with your vision, or skip to receive a random suggestion.',
 }

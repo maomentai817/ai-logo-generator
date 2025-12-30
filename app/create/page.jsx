@@ -24,20 +24,20 @@ function CreateLogo() {
 
   const getStep = () => { 
     if (step === 1) { 
-      return <LogoTitle onHandleInputChange={(v) => onHandleInputChange('title', v)} />
+      return <LogoTitle onHandleInputChange={(v) => onHandleInputChange('title', v)} formData={formData} />
     } else if (step === 2) {
-      return <LogoDesc onHandleInputChange={(v) => onHandleInputChange('desc', v)} />
+      return <LogoDesc onHandleInputChange={(v) => onHandleInputChange('desc', v)} formData={formData} />
     } else if (step === 3) {
-      return <LogoColorPalette onHandleInputChange={(v) => onHandleInputChange('palette', v)} />
+      return <LogoColorPalette onHandleInputChange={(v) => onHandleInputChange('palette', v)} formData={formData} />
     } else if (step === 4) {
-      return <LogoDesigns onHandleInputChange={(v) => onHandleInputChange('design', v)} />
+      return <LogoDesigns onHandleInputChange={(v) => onHandleInputChange('design', v)} formData={formData} />
     } else if (step === 5) {
-      return <LogoIdea onHandleInputChange={(v) => onHandleInputChange('idea', v)} />
+      return <LogoIdea onHandleInputChange={(v) => onHandleInputChange('idea', v)} formData={formData} />
     } 
   }
 
   return (
-    <div className='mt-28 p-10 border rounded-xl'>
+    <div className='mt-28 p-10 border rounded-xl 2xl:mx-72'>
       { getStep() }
       
       <div className='flex justify-between items-center mt-10'>

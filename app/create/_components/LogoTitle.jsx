@@ -1,12 +1,15 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import HeadingDesc from './HeadingDesc'
 import Lookup from '@/app/_data/Lookup'
 import { useSearchParams } from 'next/navigation'
 
-function LogoTitle({ onHandleInputChange }) {
+function LogoTitle({ onHandleInputChange, formData }) {
   const searchParams = useSearchParams()
   const [title, setTitle] = useState(searchParams?.get('title') ?? '')
+  useEffect(() => {
+    onHandleInputChange(title)
+  }, [])
 
   return (
     <div className='my-10'>

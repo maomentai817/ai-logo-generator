@@ -2,7 +2,7 @@ import React from 'react'
 import Lookup from '@/app/_data/Lookup'
 import HeadingDesc from './HeadingDesc'
 
-function LogoDesc({ onHandleInputChange }) {
+function LogoDesc({ onHandleInputChange, formData }) {
   return (
     <div className='my-10'>
       <HeadingDesc
@@ -12,6 +12,7 @@ function LogoDesc({ onHandleInputChange }) {
       <input
         type='text'
         placeholder={Lookup?.InputDescPlaceholder}
+        defaultValue={formData.desc}
         className='w-full p-4 border rounded-lg mt-5'
         onChange={(e) => onHandleInputChange(e.target.value)}
       />
